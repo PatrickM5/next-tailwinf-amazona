@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -22,8 +23,19 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
   }
+}
+
+.card {
+  @apply mb-5 block rounded-lg border border-gray-200 shadow-md;
+}
+
+/* prettier-ignore */
+/* hoverbg-amber-400 activebg-amber-500 */
+.primary-button {
+  @apply bg-amber-300 py-2 px-4 shadow outline-none;
 }
